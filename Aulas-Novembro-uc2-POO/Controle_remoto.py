@@ -12,11 +12,11 @@ class ControleRemoto:
         self.quarto = quarto
         self.marca = marca
 
-controle_remoto1 = ControleRemoto("Azul",'Hocku', 10, 5, 2, 'Quarto')
-controle_remoto2 = ControleRemoto('Vermelho','TCL', 10, 5, 2, 'Cozinha')
-controle_remoto3 = ControleRemoto('Verde','Samsung', 10, 5, 2, 'Sala')
-controle_remoto4 = ControleRemoto('Preto','LG', 10, 5, 2, 'Som')
-controle_remoto5 = ControleRemoto('Branco','Philips', 10, 5, 2, 'Portão')
+controle_remoto1 = ControleRemoto("Azul", 10, 5, 2,'Quarto', 'Hocku')
+controle_remoto2 = ControleRemoto('Vermelho', 10, 5, 2, 'Cozinha', 'TCL')
+controle_remoto3 = ControleRemoto('Verde', 10, 5, 2, 'Sala', 'Samsung')
+controle_remoto4 = ControleRemoto('Preto', 10, 5, 2, 'Som', 'LG')
+controle_remoto5 = ControleRemoto('Branco', 10, 5, 2, 'Portão', 'Philips')
 
 def controle_quarto(botao):
     if botao == "NetFlix":
@@ -63,8 +63,8 @@ controle_quarto("Power")
 print(f"O controle remoto da {controle_remoto2.marca} é de cor {controle_remoto2.cor}.")
 controle_cozinha("Mute")
 print(f"O controle remoto do {controle_remoto3.marca} é de cor {controle_remoto3.cor}.")
-controle_portao("1")
-print(f"O controle remoto da {controle_remoto4.marca} é de cor {controle_remoto4.cor}.")
 controle_sala("A")
-print(f"O controle remoto do {controle_remoto5.marca} é de cor {controle_remoto5.cor}.")
+print(f"O controle remoto da {controle_remoto4.marca} é de cor {controle_remoto4.cor}.")
 controle_som("+")
+print(f"O controle remoto do {controle_remoto5.marca} é de cor {controle_remoto5.cor}.")
+controle_portao("1")
