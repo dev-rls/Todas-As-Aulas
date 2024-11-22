@@ -1,5 +1,5 @@
 # Quando estamos criando uma classe, aprimeira coisa é definir uma função __init__
-# self transforma a variável em global. Caso não seja definido a ariavel ficará apenas dentro localmente dentro da função.
+# self transforma a variável em global. Caso não seja definido a variavel ficará apenas dentro localmente dentro da função.
 
 class Vendedor():
     def __init__(self, nome, vendas):

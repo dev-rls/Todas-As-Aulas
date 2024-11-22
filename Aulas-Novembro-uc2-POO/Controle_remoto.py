@@ -1,0 +1,70 @@
+'''Utilizamos as classes, nós estamos criando o código orientado a objetos. Reaproveitamento do código
+Métodos de um objetos
+
+Quais as caracteristicas do controle?
+'''
+class ControleRemoto:
+    def __init__(self, cor, altura, profundidade, largura, quarto, marca):
+        self.cor = cor
+        self.altura = altura
+        self.profundidade = profundidade
+        self.largura = largura
+        self.quarto = quarto
+        self.marca = marca
+
+controle_remoto1 = ControleRemoto("Azul",'Hocku', 10, 5, 2, 'Quarto')
+controle_remoto2 = ControleRemoto('Vermelho','TCL', 10, 5, 2, 'Cozinha')
+controle_remoto3 = ControleRemoto('Verde','Samsung', 10, 5, 2, 'Sala')
+controle_remoto4 = ControleRemoto('Preto','LG', 10, 5, 2, 'Som')
+controle_remoto5 = ControleRemoto('Branco','Philips', 10, 5, 2, 'Portão')
+
+def controle_quarto(botao):
+    if botao == "NetFlix":
+        print("abrir NetFlix")
+    elif botao == "Power":
+        print("desligar TV")
+    else:
+        print("Valor Inválido")
+
+def controle_cozinha(botao):
+        if botao == "CH":
+            print("mudar canal")
+        elif botao == "Mute":
+            print("som desligado")
+        else:
+            print("Valor Inválido")
+
+def controle_portao(self, botao):
+        if botao == "5":
+            print("Abrir Portão")
+        elif botao == "1":
+            print("Fechar")
+        else:
+            print("Valor Inválido")
+
+def controle_som(self, botao):
+        if botao == "+":
+            print("aumentar volume")
+        elif botao == "-":
+            print("diminuir volume")
+        else:
+            print("Valor Inválido")
+
+def controle_sala(self, botao):
+        if botao == "A":
+            print("Abrir cortina")
+        elif botao == "F":
+            print("Fechar cortina")
+        else:
+            print("Valor Inválido")
+
+print(f"O controle remoto do {controle_remoto1.marca} é de cor {controle_remoto1.cor}.")
+controle_quarto("Power")
+print(f"O controle remoto da {controle_remoto2.marca} é de cor {controle_remoto2.cor}.")
+controle_cozinha("Mute")
+print(f"O controle remoto do {controle_remoto3.marca} é de cor {controle_remoto3.cor}.")
+controle_portao("1")
+print(f"O controle remoto da {controle_remoto4.marca} é de cor {controle_remoto4.cor}.")
+controle_sala("A")
+print(f"O controle remoto do {controle_remoto5.marca} é de cor {controle_remoto5.cor}.")
+controle_som("+")
