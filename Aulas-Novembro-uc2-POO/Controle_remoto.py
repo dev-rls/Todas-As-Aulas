@@ -12,7 +12,7 @@ class ControleRemoto:
         self.quarto = quarto
         self.marca = marca
 
-controle_remoto1 = ControleRemoto("Azul", 10, 5, 2,'Quarto', 'Hocku')
+controle_remoto1 = ControleRemoto("Azul", 10, 5, 2,'Quarto', 'Hoku')
 controle_remoto2 = ControleRemoto('Vermelho', 10, 5, 2, 'Cozinha', 'TCL')
 controle_remoto3 = ControleRemoto('Verde', 10, 5, 2, 'Sala', 'Samsung')
 controle_remoto4 = ControleRemoto('Preto', 10, 5, 2, 'Som', 'LG')
