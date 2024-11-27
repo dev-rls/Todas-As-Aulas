@@ -7,21 +7,24 @@ valor de saque, caso seja verdadeira a senha, retirar do saldo, o valor solicita
  com: cadastro, saldo, saque e depósito.'''
 
 class Conta:
-    def __init__(self, numero, cpf, senha, nome_titular, saldo=0):
-      self.numero = numero
-      self.__cpf = cpf
-      self.nome_titular = nome_titular
-      self.saldo = saldo
-      self.__senha = senha
-
-
-    def depositar(self, valor):
-        self.saldo += valor
-
-    def sacar(self, valor):
-        self.saldo-= valor
-
-    def gerar_extrato(self):
-        print(f"numero: {self.numero}\n Nome:{self.nome_titular}\n cpf:{self.cpf}\nsaldo: {self.saldo}")
-
-      
+    def __init__(self,nome,cpf,saldo,senha):
+        self.nome=nome    
+        self.__cpf=cpf
+        self.__saldo=saldo
+        self.__senha=senha
+        print("Cadastro efetuado com sucesso")
+ 
+def depositar(self,valor):
+     self.saldo+= valor
+ 
+def sacar(self,valor):
+      self.saldo-=valor
+ 
+def extrato(self,senha):
+    if senha==senha.__senha:
+          return f"Saldo atual: R${self.valor}"
+    else:
+        print("Senha inválida")
+ 
+def gerar_extrato(self):
+     print(f"numero:{self.numero}\n Nome: {self.nome}\n cpf: {self.cpf}\n saldo sehha:{self.senha}")

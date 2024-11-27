@@ -108,7 +108,7 @@ Subclasse - Original
 Classe pai, ancestral ou superclasse
 - Permite herança múltipla
  
-Suponha que a classe ClasseB herda de ClasseA. Um objeto da ClasseB também é um objeto da CasseA Alterar m3() basta modificar a ClasseA
+Suponha que a classe ClasseB herda de ClasseA. Um objeto da ClasseB também é um objeto da CasseA Alterar m3() basta modificar a ClasseA.
  ClasseA
  +m3()
  +m4()
