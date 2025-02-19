@@ -1,22 +1,14 @@
-# -*- coding: utf-8 -*-
-
-################################################################################
-## Form generated from reading UI file 'login.ui'
-##
-## Created by: Qt User Interface Compiler version 6.8.2
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect,
-    QSize, QTime, QUrl, Qt)
+    QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt)
+
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon,
-    QImage, QKeySequence, QLinearGradient, QPainter,
-    QPalette, QPixmap, QRadialGradient, QTransform)
+    QFont, QFontDatabase, QGradient, QIcon, QImage, QKeySequence, 
+    QLinearGradient, QPainter, QPalette, QPixmap, QRadialGradient, QTransform)
+
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
     QMainWindow, QPushButton, QSizePolicy, QWidget)
+
 import img_rc
 
 class Ui_MainWindow(object):
@@ -24,9 +16,9 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(499, 400)
-        self.centralwidget = QWidget(MainWindow)
-        self.centralwidget.setObjectName(u"centralwidget")
-        self.tela_login = QFrame(self.centralwidget)
+        self.tela_principal = QWidget(MainWindow)
+        self.tela_principal.setObjectName(u"tela_principal")
+        self.tela_login = QFrame(self.tela_principal)
         self.tela_login.setObjectName(u"tela_login")
         self.tela_login.setGeometry(QRect(70, 70, 341, 301))
         self.tela_login.setStyleSheet(u"background-color: rgb(102, 102, 102);")
@@ -38,14 +30,14 @@ class Ui_MainWindow(object):
         self.btn_entrar.setStyleSheet(u"background-color: rgb(85, 170, 255);\n"
 "font: 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);")
-        self.lineEdit_2 = QLineEdit(self.tela_login)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-        self.lineEdit_2.setGeometry(QRect(42, 160, 251, 31))
-        self.lineEdit_2.setEchoMode(QLineEdit.EchoMode.Password)
-        self.lineEdit = QLineEdit(self.tela_login)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(40, 100, 251, 31))
-        self.lineEdit.setStyleSheet(u"border-color: rgb(170, 85, 255);")
+        self.input_senha = QLineEdit(self.tela_login)
+        self.input_senha.setObjectName(u"input_senha")
+        self.input_senha.setGeometry(QRect(42, 160, 251, 31))
+        self.input_senha.setEchoMode(QLineEdit.EchoMode.Password)
+        self.input_usuario = QLineEdit(self.tela_login)
+        self.input_usuario.setObjectName(u"input_usuario")
+        self.input_usuario.setGeometry(QRect(40, 100, 251, 31))
+        self.input_usuario.setStyleSheet(u"border-color: rgb(170, 85, 255);")
         self.txt_login = QLabel(self.tela_login)
         self.txt_login.setObjectName(u"txt_login")
         self.txt_login.setGeometry(QRect(130, 30, 61, 31))
@@ -79,18 +71,20 @@ class Ui_MainWindow(object):
         self.img.setOpenExternalLinks(True)
         self.img.raise_()
         self.btn_entrar.raise_()
-        self.lineEdit_2.raise_()
-        self.lineEdit.raise_()
+        self.input_senha.raise_()
+        self.input_usuario.raise_()
         self.txt_login.raise_()
         self.txt_senha.raise_()
         self.txt_user.raise_()
-        MainWindow.setCentralWidget(self.centralwidget)
+        MainWindow.setCentralWidget(self.tela_principal)
 
         self.retranslateUi(MainWindow)
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
-
+  
+        self.btn_entrar.clicked.connect(self.check_login)
+   
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.btn_entrar.setText(QCoreApplication.translate("MainWindow", u"Entrar", None))
@@ -98,15 +92,24 @@ class Ui_MainWindow(object):
         self.txt_senha.setText(QCoreApplication.translate("MainWindow", u"Senha", None))
         self.txt_user.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
         self.img.setText("")
-    # retranslateUi
-
-import login, sys
-from login import Ui_MainWindow
  
-if __name__=="__main__":
-    app=QApplication(sys.argv)
-    MainWindow=QMainWindow()
-    ui=Ui_MainWindow()
+    def check_login(self):
+        correct_username = "raquel"
+        correct_password = "123456"
+
+        username = self.input_usuario.text()
+        password = self.input_senha.text()
+
+        if username == correct_username and password == correct_password:
+            print("Login bem-sucedido! Carregando...")
+        else:
+            print("Usuário ou senha inválido.")
+
+if __name__ == "__main__":
+    import sys
+    app = QApplication(sys.argv)
+    MainWindow = QMainWindow()
+    ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec())

@@ -31,7 +31,7 @@
    <property name="frameShadow">
     <enum>QFrame::Shadow::Raised</enum>
    </property>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btn_sair">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -48,7 +48,7 @@ background-color: rgb(85, 170, 255);</string>
      <string>Sair</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="btn_check">
     <property name="geometry">
      <rect>
       <x>330</x>
@@ -65,7 +65,7 @@ font: 10pt &quot;Times New Roman&quot;;</string>
      <string>Concluir</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="input_endereco">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -75,7 +75,7 @@ font: 10pt &quot;Times New Roman&quot;;</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="txt_telefone">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -93,7 +93,7 @@ font: 10pt &quot;Times New Roman&quot;;</string>
      <string>Telefone:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="txt_formulario">
     <property name="geometry">
      <rect>
       <x>150</x>
@@ -110,7 +110,7 @@ color: rgb(255, 255, 127);</string>
      <string>Formulário</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="btn_feminino">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -127,7 +127,7 @@ font: 10pt &quot;Times New Roman&quot;;</string>
      <string>Feminino</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="txt_nome">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -144,7 +144,7 @@ color: rgb(255, 255, 255);</string>
      <string>Nome:</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_3">
+   <widget class="QLineEdit" name="input_tefefone">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -154,7 +154,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="input_nome">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -164,7 +164,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="txt_endereco">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -181,7 +181,7 @@ font: 10pt &quot;Times New Roman&quot;;</string>
      <string>Endereço:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="txt_sexo">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -198,7 +198,7 @@ font: 10pt &quot;Times New Roman&quot;;</string>
      <string>Sexo:</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="btn_masculino">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -215,7 +215,7 @@ font: 9pt &quot;Times New Roman&quot;;</string>
      <string>Masculino</string>
     </property>
    </widget>
-   <widget class="QDateEdit" name="dateEdit">
+   <widget class="QDateEdit" name="btn_dateEdit">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -229,7 +229,7 @@ font: 9pt &quot;Times New Roman&quot;;</string>
 font: 10pt &quot;Times New Roman&quot;;</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="btn_outro">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -247,7 +247,7 @@ font: 10pt &quot;Times New Roman&quot;;
      <string>Outro</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="txt_ddn">
     <property name="geometry">
      <rect>
       <x>20</x>

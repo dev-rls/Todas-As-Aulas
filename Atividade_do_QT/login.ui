@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="tela_principal">
    <widget class="QFrame" name="tela_login">
     <property name="geometry">
      <rect>
@@ -50,7 +50,7 @@ color: rgb(255, 255, 255);</string>
       <string>Entrar</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit_2">
+    <widget class="QLineEdit" name="input_senha">
      <property name="geometry">
       <rect>
        <x>42</x>
@@ -63,7 +63,7 @@ color: rgb(255, 255, 255);</string>
       <enum>QLineEdit::EchoMode::Password</enum>
      </property>
     </widget>
-    <widget class="QLineEdit" name="lineEdit">
+    <widget class="QLineEdit" name="input_usuario">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -165,8 +165,8 @@ background-color: rgba(0, 0, 0, 0);</string>
     </widget>
     <zorder>img</zorder>
     <zorder>btn_entrar</zorder>
-    <zorder>lineEdit_2</zorder>
-    <zorder>lineEdit</zorder>
+    <zorder>input_senha</zorder>
+    <zorder>input_usuario</zorder>
     <zorder>txt_login</zorder>
     <zorder>txt_senha</zorder>
     <zorder>txt_user</zorder>
