@@ -1,14 +1,22 @@
+# -*- coding: utf-8 -*-
+
+################################################################################
+## Form generated from reading UI file 'login.ui'
+##
+## Created by: Qt User Interface Compiler version 6.8.2
+##
+## WARNING! All changes made in this file will be lost when recompiling UI file!
+################################################################################
 
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
-    QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt)
-
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
 from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
-    QFont, QFontDatabase, QGradient, QIcon, QImage, QKeySequence, 
-    QLinearGradient, QPainter, QPalette, QPixmap, QRadialGradient, QTransform)
-
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QLabel, QLineEdit,
     QMainWindow, QPushButton, QSizePolicy, QWidget)
-
 import img_rc
 
 class Ui_MainWindow(object):
@@ -33,11 +41,15 @@ class Ui_MainWindow(object):
         self.input_senha = QLineEdit(self.tela_login)
         self.input_senha.setObjectName(u"input_senha")
         self.input_senha.setGeometry(QRect(42, 160, 251, 31))
+        self.input_senha.setStyleSheet(u"background-color: rgb(130, 130, 130);\n"
+"color: rgb(255, 255, 255);")
         self.input_senha.setEchoMode(QLineEdit.EchoMode.Password)
         self.input_usuario = QLineEdit(self.tela_login)
         self.input_usuario.setObjectName(u"input_usuario")
         self.input_usuario.setGeometry(QRect(40, 100, 251, 31))
-        self.input_usuario.setStyleSheet(u"border-color: rgb(170, 85, 255);")
+        self.input_usuario.setStyleSheet(u"border-color: rgb(170, 85, 255);\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(130, 130, 130);")
         self.txt_login = QLabel(self.tela_login)
         self.txt_login.setObjectName(u"txt_login")
         self.txt_login.setGeometry(QRect(130, 30, 61, 31))
@@ -82,17 +94,20 @@ class Ui_MainWindow(object):
 
         QMetaObject.connectSlotsByName(MainWindow)
     # setupUi
-  
         self.btn_entrar.clicked.connect(self.check_login)
-   
+
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.btn_entrar.setText(QCoreApplication.translate("MainWindow", u"Entrar", None))
+        self.input_senha.setText(QCoreApplication.translate("MainWindow", u"Digite sua senha", None))
+        self.input_senha.setPlaceholderText("")
+        self.input_usuario.setText(QCoreApplication.translate("MainWindow", u"Digite seu usu\u00e1rio", None))
         self.txt_login.setText(QCoreApplication.translate("MainWindow", u"Login", None))
         self.txt_senha.setText(QCoreApplication.translate("MainWindow", u"Senha", None))
         self.txt_user.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
         self.img.setText("")
- 
+    # retranslateUi
+
     def check_login(self):
         correct_username = "raquel"
         correct_password = "123456"
@@ -113,3 +128,4 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec())
+    

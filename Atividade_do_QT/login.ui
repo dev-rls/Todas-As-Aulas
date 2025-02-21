@@ -59,8 +59,18 @@ color: rgb(255, 255, 255);</string>
        <height>31</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(130, 130, 130);
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Digite sua senha</string>
+     </property>
      <property name="echoMode">
       <enum>QLineEdit::EchoMode::Password</enum>
+     </property>
+     <property name="placeholderText">
+      <string/>
      </property>
     </widget>
     <widget class="QLineEdit" name="input_usuario">
@@ -73,7 +83,12 @@ color: rgb(255, 255, 255);</string>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-color: rgb(170, 85, 255);</string>
+      <string notr="true">border-color: rgb(170, 85, 255);
+color: rgb(255, 255, 255);
+background-color: rgb(130, 130, 130);</string>
+     </property>
+     <property name="text">
+      <string>Digite seu usuário</string>
      </property>
     </widget>
     <widget class="QLabel" name="txt_login">
