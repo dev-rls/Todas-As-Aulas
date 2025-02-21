@@ -62,6 +62,9 @@ font: 10pt &quot;Times New Roman&quot;;</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
      <string>Insira seu endereço</string>
     </property>
    </widget>
@@ -148,6 +151,9 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
      <string>Insira seu telefone</string>
     </property>
    </widget>
@@ -165,6 +171,9 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
      <string>Insira seu nome</string>
     </property>
    </widget>

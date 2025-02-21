@@ -99,15 +99,15 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.btn_entrar.setText(QCoreApplication.translate("MainWindow", u"Entrar", None))
-        self.input_senha.setText(QCoreApplication.translate("MainWindow", u"Digite sua senha", None))
-        self.input_senha.setPlaceholderText("")
-        self.input_usuario.setText(QCoreApplication.translate("MainWindow", u"Digite seu usu\u00e1rio", None))
+        self.input_senha.setText("")
+        self.input_senha.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Digite sua senha", None))
+        self.input_usuario.setText("")
+        self.input_usuario.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Digite seu usu\u00e1rio", None))
         self.txt_login.setText(QCoreApplication.translate("MainWindow", u"Login", None))
         self.txt_senha.setText(QCoreApplication.translate("MainWindow", u"Senha", None))
         self.txt_user.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
         self.img.setText("")
     # retranslateUi
-
     def check_login(self):
         correct_username = "raquel"
         correct_password = "123456"
@@ -128,4 +128,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec())
-    

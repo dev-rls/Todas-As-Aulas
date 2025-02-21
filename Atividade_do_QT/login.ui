@@ -64,13 +64,13 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Digite sua senha</string>
+      <string/>
      </property>
      <property name="echoMode">
       <enum>QLineEdit::EchoMode::Password</enum>
      </property>
      <property name="placeholderText">
-      <string/>
+      <string>Digite sua senha</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="input_usuario">
@@ -88,6 +88,9 @@ color: rgb(255, 255, 255);
 background-color: rgb(130, 130, 130);</string>
      </property>
      <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
       <string>Digite seu usuário</string>
      </property>
     </widget>

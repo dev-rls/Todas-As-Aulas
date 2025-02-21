@@ -17,4 +17,3 @@ def adicionar_user(login, senha):
     conexao.commit()
     cursor.close()
     conexao.close()
-
